@@ -275,3 +275,9 @@ footer{
     padding:30px;
     color:#777;
 }
+
+@keyframes rotateSnake{
+    to{
+        transform:rotate(360deg);
+    }
+}
