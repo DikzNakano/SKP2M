@@ -6,12 +6,7 @@
 }
 
 body{
-    background:
-    radial-gradient(
-        circle at center,
-        rgba(160,32,240,.15),
-        #050018 70%
-    );
+    background:#080412;
 
     color:white;
 
