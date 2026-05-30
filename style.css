@@ -169,7 +169,7 @@ nav{
     position:absolute;
     border-radius:50%;
     filter:blur(140px);
-    opacity:.3;
+    opacity:.7;
 }
 
 .hero h1{
