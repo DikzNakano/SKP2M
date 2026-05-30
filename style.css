@@ -63,7 +63,7 @@ nav{
     0 0 20px rgba(160,32,240,.8),
     0 0 50px rgba(160,32,240,.5);
 
-    animation: float 3s ease-in-out infinite;
+    animation: none;
 }
 
 .intro-video{
