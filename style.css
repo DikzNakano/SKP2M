@@ -54,7 +54,7 @@ nav{
 .logo{
     font-size:24px;
     font-weight:bold;
-    color:#4da3ff;
+    color:#b14dff;
 }
 
 .hero{
@@ -71,7 +71,7 @@ nav{
 .glow{
     width:350px;
     height:350px;
-    background:#1f6fff;
+    background:#a020f0;
     position:absolute;
     border-radius:50%;
     filter:blur(140px);
@@ -84,7 +84,7 @@ nav{
 }
 
 .hero h2{
-    color:#4da3ff;
+    color:#c77dff;
     z-index:1;
 }
 
@@ -113,7 +113,7 @@ nav{
 
 .socials a:hover{
     transform:translateY(-5px);
-    box-shadow:0 0 20px #1f6fff;
+    box-shadow:0 0 20px #a020f0;
 }
 
 .about,
@@ -146,7 +146,7 @@ nav{
 
 .card:hover{
     transform:translateY(-8px);
-    box-shadow:0 0 25px rgba(77,163,255,.4);
+    box-shadow:0 0 25px rgba(160,32,240,.5);
 }
 
 .card h3{
