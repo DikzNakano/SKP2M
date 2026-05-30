@@ -202,28 +202,14 @@ nav{
 }
 
 .menu{
-    position:fixed;
-
-    top:70px;
-    right:20px;
-
-    display:none;
-    flex-direction:column;
-
-    min-width:220px;
-
-    background:rgba(15,15,25,.95);
-
-    border:1px solid rgba(255,255,255,.08);
-
-    border-radius:20px;
-
-    overflow:hidden;
-
-    z-index:1000;
+    border:1px solid #c77dff;
 
     box-shadow:
-    0 0 10px rgba(160,32,240,.3);
+    0 0 10px #a020f0,
+    0 0 20px rgba(160,32,240,.5),
+    inset 0 0 10px rgba(160,32,240,.2);
+
+    animation:menuGlow 2s ease-in-out infinite alternate;
 }
 
 .menu a{
@@ -243,4 +229,17 @@ footer{
     text-align:center;
     padding:30px;
     color:#777;
+}
+
+@keyframes menuGlow{
+    from{
+        box-shadow:
+        0 0 10px #a020f0;
+    }
+
+    to{
+        box-shadow:
+        0 0 20px #ffffff,
+        0 0 30px #a020f0;
+    }
 }
