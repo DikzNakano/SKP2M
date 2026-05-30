@@ -24,7 +24,7 @@ body{
 
     z-index:999;
 
-    animation:fadeLoading 0.8s ease 0.5s forwards;
+    animation:fadeLoading 1s ease forwards;
 
     pointer-events:none;
 }
