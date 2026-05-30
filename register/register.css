@@ -17,6 +17,28 @@ body{
     font-family:sans-serif;
 }
 
+.register-logo{
+
+    width:120px;
+    height:120px;
+
+    object-fit:cover;
+
+    display:block;
+
+    margin:0 auto 20px auto;
+
+    border-radius:50%;
+
+    border:3px solid rgba(255,255,255,.15);
+
+    box-shadow:
+    0 0 20px rgba(160,32,240,.8),
+    0 0 50px rgba(160,32,240,.5);
+
+    animation:float 3s ease-in-out infinite;
+}
+
 .container{
 
     width:90%;
