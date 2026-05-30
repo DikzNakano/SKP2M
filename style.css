@@ -58,7 +58,7 @@ nav{
 }
 
 .hero{
-    min-height:800vh;
+    min-height:95vh;
     display:flex;
     flex-direction:column;
     justify-content:center;
