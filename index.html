@@ -134,60 +134,6 @@ if(!user){
 
 }
 
-const logo = document.getElementById("heroLogo");
-const video = document.getElementById("introVideo");
-
-let playing = false;
-
-function playIntro(){
-
-    if(playing) return;
-
-    playing = true;
-
-    logo.style.opacity = "0";
-
-    setTimeout(() => {
-
-        logo.style.display = "none";
-
-        video.style.display = "block";
-
-        video.currentTime = 0;
-
-        setTimeout(() => {
-            video.style.opacity = "1";
-        },50);
-
-        video.play();
-
-    },800);
-}
-
-video.addEventListener("ended", () => {
-
-    video.style.opacity = "0";
-
-    setTimeout(() => {
-
-        video.pause();
-
-        video.currentTime = 0;
-
-        video.style.display = "none";
-
-        logo.style.display = "block";
-
-        setTimeout(() => {
-            logo.style.opacity = "1";
-        },50);
-
-        playing = false;
-
-    },800);
-
-});
-
 function toggleMenu(){
     const menu = document.getElementById("menu");
 
