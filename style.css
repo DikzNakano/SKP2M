@@ -153,6 +153,52 @@ nav{
     margin-top:15px;
 }
 
+.menu-btn{
+    font-size:28px;
+    cursor:pointer;
+    color:white;
+    user-select:none;
+}
+
+.menu{
+    position:absolute;
+    top:75px;
+    right:30px;
+
+    display:none;
+    flex-direction:column;
+
+    min-width:220px;
+
+    background:rgba(15,15,25,.95);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:15px;
+
+    backdrop-filter:blur(15px);
+
+    overflow:hidden;
+
+    box-shadow:
+    0 0 20px rgba(160,32,240,.25);
+
+    z-index:999;
+}
+
+.menu a{
+    text-decoration:none;
+    color:white;
+
+    padding:15px 20px;
+
+    transition:.3s;
+}
+
+.menu a:hover{
+    background:rgba(160,32,240,.2);
+}
+
 footer{
     text-align:center;
     padding:30px;
