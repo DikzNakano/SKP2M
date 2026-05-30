@@ -83,6 +83,11 @@ nav{
     margin-left:-30px;
 }
 
+.logo-text{
+    display:flex;
+    gap:0;
+}
+
 .bar{
     width:5px;
     height:28px;
@@ -97,13 +102,11 @@ nav{
 }
 
 .letter{
+    display:inline-block;
+
     opacity:0;
 
     transform:translateX(20px);
-
-    color:#c77dff;
-
-    font-weight:800;
 
     animation:navLogo .5s forwards;
 }
