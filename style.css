@@ -96,6 +96,38 @@ nav{
     0 0 20px #a020f0;
 }
 
+.letter{
+    opacity:0;
+
+    transform:translateX(20px);
+
+    color:#c77dff;
+
+    font-weight:800;
+
+    animation:navLogo .5s forwards;
+}
+
+.letter:nth-child(2){
+    animation-delay:.1s;
+}
+
+.letter:nth-child(3){
+    animation-delay:.2s;
+}
+
+.letter:nth-child(4){
+    animation-delay:.3s;
+}
+
+.letter:nth-child(5){
+    animation-delay:.4s;
+}
+
+.letter:nth-child(6){
+    animation-delay:.5s;
+}
+
 .hero{
     min-height:95vh;
     display:flex;
@@ -279,6 +311,24 @@ footer{
     50%{
         transform:translateY(-10px);
     }
+}
+
+@keyframes navLogo{
+
+    from{
+        opacity:0;
+        transform:translateX(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+
+        text-shadow:
+        0 0 10px #c77dff,
+        0 0 20px #a020f0;
+    }
+
 }
 
 @keyframes menuGlow{
