@@ -69,33 +69,6 @@ nav{
     animation: none;
 }
 
-.intro-video{
-    display:none;
-
-    width:150px;
-    height:150px;
-
-    object-fit:cover;
-
-    border-radius:50%;
-
-    margin-bottom:25px;
-
-    opacity:0;
-
-    cursor:pointer;
-
-    z-index:1;
-
-    transition:opacity .8s ease;
-
-    border:3px solid rgba(255,255,255,.15);
-
-    box-shadow:
-    0 0 20px rgba(160,32,240,.8),
-    0 0 50px rgba(160,32,240,.5);
-}
-
 .logo{
     position:relative;
     z-index:1000;
