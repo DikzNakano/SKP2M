@@ -202,7 +202,25 @@ nav{
 }
 
 .menu{
+    position:fixed;
+
+    top:60px;
+    right:15px;
+
+    display:none;
+    flex-direction:column;
+
+    min-width:160px;
+
+    background:rgba(15,15,25,.95);
+
     border:1px solid #c77dff;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    z-index:1000;
 
     box-shadow:
     0 0 10px #a020f0,
@@ -214,9 +232,12 @@ nav{
 
 .menu a{
     text-decoration:none;
+
     color:white;
 
-    padding:15px 20px;
+    font-size:14px;
+
+    padding:10px 14px;
 
     transition:.3s;
 }
