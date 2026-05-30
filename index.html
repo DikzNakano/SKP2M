@@ -119,7 +119,13 @@ Verlyn</h3>
 
 <script>
 
+let playing = false;
+
 function playIntro(){
+
+    if(playing) return;
+
+    playing = true;
 
     const logo =
     document.getElementById("heroLogo");
@@ -149,9 +155,6 @@ function playIntro(){
 
 }
 
-const video =
-document.getElementById("introVideo");
-
 video.addEventListener("ended",() => {
 
     video.style.opacity = "0";
@@ -160,16 +163,15 @@ video.addEventListener("ended",() => {
 
         video.style.display = "none";
 
-        const logo =
-        document.getElementById("heroLogo");
-
-        logo.style.display = "block";
+        heroLogo.style.display = "block";
 
         setTimeout(() => {
 
-            logo.style.opacity = "1";
+            heroLogo.style.opacity = "1";
 
         },50);
+
+        playing = false;
 
     },800);
 
