@@ -118,6 +118,63 @@ Verlyn</h3>
 </footer>
 
 <script>
+
+function playIntro(){
+
+    const logo =
+    document.getElementById("heroLogo");
+
+    const video =
+    document.getElementById("introVideo");
+
+    logo.style.opacity = "0";
+
+    setTimeout(() => {
+
+        logo.style.display = "none";
+
+        video.style.display = "block";
+
+        setTimeout(() => {
+
+            video.style.opacity = "1";
+
+        },50);
+
+        video.currentTime = 0;
+
+        video.play();
+
+    },800);
+
+}
+
+const video =
+document.getElementById("introVideo");
+
+video.addEventListener("ended",() => {
+
+    video.style.opacity = "0";
+
+    setTimeout(() => {
+
+        video.style.display = "none";
+
+        const logo =
+        document.getElementById("heroLogo");
+
+        logo.style.display = "block";
+
+        setTimeout(() => {
+
+            logo.style.opacity = "1";
+
+        },50);
+
+    },800);
+
+});
+
 function toggleMenu(){
     const menu = document.getElementById("menu");
 
