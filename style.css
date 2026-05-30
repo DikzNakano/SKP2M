@@ -156,17 +156,15 @@ nav{
 .menu-btn{
     position:fixed;
 
-    top:20px;
-    right:25px;
+    top:0;
+    right:15px;
 
-    font-size:30px;
+    font-size:40px;
+
     cursor:pointer;
-
     color:white;
 
     z-index:1001;
-
-    user-select:none;
 }
 
 .menu{
