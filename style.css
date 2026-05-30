@@ -36,8 +36,8 @@ nav{
     border:3px solid rgba(255,255,255,.15);
 
     box-shadow:
-    0 0 20px rgba(77,163,255,.6),
-    0 0 50px rgba(77,163,255,.3);
+    0 0 20px rgba(160,32,240,.8),
+    0 0 50px rgba(160,32,240,.5);
 
     animation: float 3s ease-in-out infinite;
 }
