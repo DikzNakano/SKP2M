@@ -154,16 +154,26 @@ nav{
 }
 
 .menu-btn{
-    font-size:28px;
+    position:fixed;
+
+    top:20px;
+    right:25px;
+
+    font-size:30px;
     cursor:pointer;
+
     color:white;
+
+    z-index:1001;
+
     user-select:none;
 }
 
 .menu{
-    position:absolute;
-    top:75px;
-    right:30px;
+    position:fixed;
+
+    top:70px;
+    right:20px;
 
     display:none;
     flex-direction:column;
@@ -183,7 +193,7 @@ nav{
     box-shadow:
     0 0 20px rgba(160,32,240,.25);
 
-    z-index:999;
+    z-index:1000;
 }
 
 .menu a{
