@@ -321,6 +321,16 @@ nav{
     background:rgba(160,32,240,.2);
 }
 
+.tiny-text{
+    text-align:center;
+
+    font-size:10px;
+
+    color:#666;
+
+    margin-top:5px;
+}
+
 footer{
     text-align:center;
     padding:30px;
