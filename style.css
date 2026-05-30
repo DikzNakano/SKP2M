@@ -214,16 +214,9 @@ nav{
 
     background:rgba(15,15,25,.95);
 
-    border:1px solid rgba(255,255,255,.08);
-
-    border-radius:15px;
-
-    backdrop-filter:blur(15px);
+    border-radius:20px;
 
     overflow:hidden;
-
-    box-shadow:
-    0 0 20px rgba(160,32,240,.25);
 
     z-index:1000;
 }
