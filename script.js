@@ -4,7 +4,7 @@
 // ====================
 
 const SUPABASE_URL =
-"https://cdn.jsdelivr.net/npm/@supabase/supabase-js";
+"https://wgredziepsnlqerorxzw.supabase.co";
 
 const SUPABASE_KEY =
 "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndncmVkemllcHNubHFlcm9yeHp3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODAyMDU5MDIsImV4cCI6MjA5NTc4MTkwMn0.w9yjTQyxtfCA0zpw8ngsr1PdiGsOYU9KDLbPjtfeVQg";
