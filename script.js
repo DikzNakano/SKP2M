@@ -1,4 +1,6 @@
-alert(localStorage.getItem("skp2m_user"));
+alert(localStorage.removeItem(
+    "skp2m_user"
+);
 
 console.log("script.js loaded");
 
