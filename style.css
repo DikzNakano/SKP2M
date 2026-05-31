@@ -93,9 +93,6 @@ box-shadow 2s ease;
 
     opacity:1;
 
-    animation:
-    logoFade 2s ease-in-out infinite;
-
 transition:
 opacity .8s ease,
 border-color 2s ease,
@@ -399,20 +396,4 @@ footer{
         0 0 20px #ffffff,
         0 0 30px #a020f0;
     }
-}
-
-@keyframes logoFade{
-
-    0%{
-        opacity:1;
-    }
-
-    50%{
-        opacity:.6;
-    }
-
-    100%{
-        opacity:1;
-    }
-
 }
