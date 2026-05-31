@@ -89,7 +89,11 @@ box-shadow 2s ease;
 
     font-size:24px;
     font-weight:bold;
-    color:#b14dff;
+    color:var(--theme-color);
+transition:
+opacity .8s ease,
+border-color 2s ease,
+box-shadow 2s ease;
 
     margin-left:-30px;
 }
@@ -108,8 +112,14 @@ box-shadow 2s ease;
     border-radius:10px;
 
     box-shadow:
-    0 0 10px #a020f0,
-    0 0 20px #a020f0;
+    0 0 10px var(--theme-glow),
+    0 0 20px var(--theme-glow-soft);
+
+    transition:
+opacity .8s ease,
+border-color 2s ease,
+box-shadow 2s ease;
+
 }
 
 .letter{
