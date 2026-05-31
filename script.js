@@ -1,3 +1,5 @@
+alert("script.js kebaca");
+
 console.log("script.js loaded");
 
 console.log(window.supabase);
