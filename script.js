@@ -9,13 +9,24 @@ const SUPABASE_URL =
 const SUPABASE_KEY =
 "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndncmVkemllcHNubHFlcm9yeHp3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODAyMDU5MDIsImV4cCI6MjA5NTc4MTkwMn0.w9yjTQyxtfCA0zpw8ngsr1PdiGsOYU9KDLbPjtfeVQg";
 
-const supabase =
-window.supabase.createClient(
-    SUPABASE_URL,
-    SUPABASE_KEY
-);
+try {
 
-alert("client oke");
+    const supabase =
+    window.supabase.createClient(
+        SUPABASE_URL,
+        SUPABASE_KEY
+    );
+
+    alert("client oke");
+
+} catch(err){
+
+    alert(
+        "ERROR: " +
+        err.message
+    );
+
+}
 
 async function registerUser(){
 
