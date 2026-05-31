@@ -39,9 +39,16 @@ if(
 
     setInterval(() => {
 
+    const logo =
+    document.querySelector(".logo");
+
+    logo.style.opacity = "0.2";
+
+    setTimeout(() => {
+
         index =
-        (index + 1)
-        % themes.length;
+        (index + 1) %
+        themes.length;
 
         document.documentElement
         .style.setProperty(
@@ -61,7 +68,11 @@ if(
             themes[index].soft
         );
 
-    }, 4000);
+        logo.style.opacity = "1";
+
+    }, 500);
+
+}, 4000);
 
 }
 
