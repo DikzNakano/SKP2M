@@ -25,24 +25,30 @@ function toggleMenu(){
 // REGISTER CHECK
 // =====================
 
-window.addEventListener("load", () => {
+const user =
+localStorage.getItem("skp2m_user");
 
-    const user =
-    localStorage.getItem("skp2m_user");
+const isVercel =
+location.hostname.endsWith(
+".vercel.app"
+);
 
-    const isVercel =
-    location.hostname.endsWith(
-    ".vercel.app"
+const isRegisterPage =
+location.pathname.includes(
+"/register/"
+);
+
+if(
+    !user &&
+    !isVercel &&
+    !isRegisterPage
+){
+
+    location.replace(
+    "/register/register.html"
     );
 
-    if(!user && !isVercel){
-
-        window.location.href =
-        "/register/register.html";
-
-    }
-
-});
+}
 
 function loadUser(){
 
