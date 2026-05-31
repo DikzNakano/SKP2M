@@ -49,72 +49,7 @@
 
 </div>
 
-<script>
-
-function loadUser(){
-
-    const data =
-    localStorage.getItem("skp2m_user");
-
-    if(!data) return;
-
-    const user =
-    JSON.parse(data);
-
-    document.getElementById(
-        "register-box"
-    ).style.display = "none";
-
-    document.getElementById(
-        "member-box"
-    ).style.display = "block";
-
-    document.getElementById(
-        "member-name"
-    ).innerText =
-    `👤 ${user.username}`;
-}
-
-function registerUser(){
-
-    const username =
-    document.getElementById("username").value;
-
-    const phone =
-    document.getElementById("phone").value;
-
-    if(!username || !phone){
-
-        alert("Lengkapi data dulu!");
-        return;
-
-    }
-
-    localStorage.setItem(
-        "skp2m_user",
-        JSON.stringify({
-            username,
-            phone
-        })
-    );
-
-    window.location.href =
-    "../index.html";
-
-}
-
-function logoutUser(){
-
-    localStorage.removeItem(
-        "skp2m_user"
-    );
-
-    location.reload();
-}
-
-window.onload = loadUser;
-
-</script>
+<script src="../script.js"></script>
 
 </body>
 </html>
