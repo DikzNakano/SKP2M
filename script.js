@@ -3,7 +3,7 @@
 // Register Database
 // ====================
 
-/* const SUPABASE_URL =
+const SUPABASE_URL =
 "https://wgredziepsnlqerorxzw.supabase.co";
 
 const SUPABASE_KEY =
@@ -15,8 +15,10 @@ window.supabase.createClient(
     SUPABASE_KEY
 );
 
-function registerUser(){
- alert("registerUser jalan");
+async function registerUser(){
+
+    alert("registerUser jalan");
+
     const username =
     document.getElementById("username")
     ?.value.trim();
@@ -26,11 +28,7 @@ function registerUser(){
     ?.value.trim();
 
     if(!username || !nomor){
-
-        alert(
-        "Lengkapi data terlebih dahulu"
-        );
-
+        alert("Lengkapi data terlebih dahulu");
         return;
     }
 
@@ -49,22 +47,16 @@ function registerUser(){
         console.error(error);
 
         alert(
-        "Gagal menyimpan data"
+            "Gagal menyimpan data: " +
+            error.message
         );
 
         return;
     }
 
-    localStorage.setItem(
-        "skp2m_user",
-        JSON.stringify({
-            username,
-            nomor
-        })
-    );
+    alert("Berhasil disimpan!");
 
-    window.location.href = "/";
-} */
+}
 
 // =====================
 // MENU
