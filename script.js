@@ -1,3 +1,7 @@
+console.log("script.js loaded");
+
+console.log(window.supabase);
+
 // =====================
 // Register Database
 // ====================
