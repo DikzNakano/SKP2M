@@ -1,4 +1,4 @@
-alert("script.js kebaca");
+alert(localStorage.getItem("skp2m_user"));
 
 console.log("script.js loaded");
 
