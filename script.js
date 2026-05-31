@@ -106,3 +106,30 @@ function logoutUser(){
 }
 
 window.onload = loadUser;
+
+// =====================
+// BackBtn
+// =====================
+
+const backBtn = document.getElementById("backBtn");
+
+if(backBtn){
+
+    const isVercel =
+    location.hostname.endsWith(
+    ".vercel.app"
+    );
+
+    if(isVercel){
+
+        backBtn.href =
+        "https://skp2m.vercel.app";
+
+    }else{
+
+        backBtn.href =
+        "https://skp2m.my.id";
+
+    }
+
+}
