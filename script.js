@@ -14,6 +14,57 @@ window.supabase.createClient(
     SUPABASE_KEY
 );
 
+async function registerUser(){
+
+    const username =
+    document.getElementById("username")
+    ?.value.trim();
+
+    const nomor =
+    document.getElementById("phone")
+    ?.value.trim();
+
+    if(!username || !nomor){
+
+        alert(
+        "Lengkapi data terlebih dahulu"
+        );
+
+        return;
+    }
+
+    const { error } =
+    await supabase
+    .from("members")
+    .insert([
+        {
+            username,
+            nomor
+        }
+    ]);
+
+    if(error){
+
+        console.error(error);
+
+        alert(
+        "Gagal menyimpan data"
+        );
+
+        return;
+    }
+
+    localStorage.setItem(
+        "skp2m_user",
+        JSON.stringify({
+            username,
+            nomor
+        })
+    );
+
+    window.location.href = "/";
+}
+
 // =====================
 // MENU
 // =====================
