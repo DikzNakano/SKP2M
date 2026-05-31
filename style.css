@@ -173,7 +173,7 @@ box-shadow 2s ease;
 .glow{
     width:350px;
     height:350px;
-    background:#a020f0;
+    background:var(--theme-color);
     position:absolute;
     border-radius:50%;
     filter:blur(140px);
@@ -186,7 +186,7 @@ box-shadow 2s ease;
 }
 
 .hero h2{
-    color:#c77dff;
+    color:var(--theme-color);
     z-index:1;
 }
 
