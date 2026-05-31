@@ -66,11 +66,16 @@ nav{
 
     transition:opacity .8s ease;
 
-    border:3px solid rgba(255,255,255,.15);
+    border:3px solid var(--theme-color);
 
     box-shadow:
-    0 0 20px rgba(160,32,240,.8),
-    0 0 50px rgba(160,32,240,.5);
+    0 0 20px var(--theme-glow),
+    0 0 50px var(--theme-glow-soft);
+
+    transition:
+opacity .8s ease,
+border-color 2s ease,
+box-shadow 2s ease;
 
     animation: float 3s ease-in-out infinite;
 }
