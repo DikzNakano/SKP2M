@@ -141,34 +141,6 @@ function loadUser(){
     `👤 ${user.username}`;
 }
 
-function registerUser(){
-
-    const username =
-    document.getElementById("username").value;
-
-    const phone =
-    document.getElementById("phone").value;
-
-    if(!username || !phone){
-
-        alert("Lengkapi data dulu!");
-        return;
-
-    }
-
-    localStorage.setItem(
-        "skp2m_user",
-        JSON.stringify({
-            username,
-            phone
-        })
-    );
-
-    window.location.href =
-    "https://skp2m.my.id/";
-
-}
-
 function logoutUser(){
 
     localStorage.removeItem(
