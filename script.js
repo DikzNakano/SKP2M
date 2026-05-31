@@ -1,3 +1,69 @@
+// =====================
+// AUTO THEME
+// =====================
+
+if(
+    location.pathname === "/" ||
+    location.pathname.endsWith("/index.html")
+){
+
+    const themes = [
+
+        {
+            color:"#a020f0",
+            glow:"rgba(160,32,240,.8)",
+            soft:"rgba(160,32,240,.5)"
+        },
+
+        {
+            color:"#00bfff",
+            glow:"rgba(0,191,255,.8)",
+            soft:"rgba(0,191,255,.5)"
+        },
+
+        {
+            color:"#ff4d4d",
+            glow:"rgba(255,77,77,.8)",
+            soft:"rgba(255,77,77,.5)"
+        },
+
+        {
+            color:"#00cc66",
+            glow:"rgba(0,204,102,.8)",
+            soft:"rgba(0,204,102,.5)"
+        }
+
+    ];
+
+    let index = 0;
+
+    setInterval(() => {
+
+        index =
+        (index + 1)
+        % themes.length;
+
+        document.documentElement
+        .style.setProperty(
+            "--theme-color",
+            themes[index].color
+        );
+
+        document.documentElement
+        .style.setProperty(
+            "--theme-glow",
+            themes[index].glow
+        );
+
+        document.documentElement
+        .style.setProperty(
+            "--theme-glow-soft",
+            themes[index].soft
+        );
+
+    }, 20000);
+
+}
 
 // =====================
 // Register Database
