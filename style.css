@@ -94,7 +94,7 @@ box-shadow 2s ease;
     opacity:1;
 
 transition:
-opacity 4s ease,
+opacity .8s ease,
 border-color 2s ease,
 box-shadow 2s ease;
 
@@ -173,7 +173,7 @@ box-shadow 2s ease;
 .glow{
     width:350px;
     height:350px;
-    background:var(--theme-color);
+    background:rgb(160,32,240);
     position:absolute;
     border-radius:50%;
     filter:blur(140px);
