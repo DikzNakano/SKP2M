@@ -16,7 +16,7 @@ window.supabase.createClient(
 );
 
 function registerUser(){
-
+ alert("registerUser jalan");
     const username =
     document.getElementById("username")
     ?.value.trim();
