@@ -90,6 +90,8 @@ box-shadow 2s ease;
     font-size:24px;
     font-weight:bold;
     color:var(--theme-color);
+
+    opacity:1;
 transition:
 opacity .8s ease,
 border-color 2s ease,
@@ -106,8 +108,8 @@ box-shadow 2s ease;
 .bar{
     width:5px;
     height:28px;
-
-    background:#c77dff;
+    opacity:1;
+    background:var(--theme-color);
 
     border-radius:10px;
 
