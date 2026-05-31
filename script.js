@@ -98,7 +98,7 @@ function registerUser(){
     );
 
     window.location.href =
-    "../index.html";
+    "https://skp2m.my.id/";
 
 }
 
