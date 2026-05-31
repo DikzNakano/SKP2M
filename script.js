@@ -9,13 +9,17 @@ const SUPABASE_URL =
 const SUPABASE_KEY =
 "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndncmVkemllcHNubHFlcm9yeHp3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODAyMDU5MDIsImV4cCI6MjA5NTc4MTkwMn0.w9yjTQyxtfCA0zpw8ngsr1PdiGsOYU9KDLbPjtfeVQg";
 
+let supabase;
+
 try {
 
-    const supabase =
+    supabase =
     window.supabase.createClient(
         SUPABASE_URL,
         SUPABASE_KEY
-    ); 
+    );
+
+    alert("client oke");
 
 } catch(err){
 
