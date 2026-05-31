@@ -127,6 +127,25 @@ function toggleMenu(){
         menu.style.display = "flex";
     }
 }
+
+window.addEventListener("load", () => {
+
+    const user =
+    localStorage.getItem("skp2m_user");
+
+    const isVercel =
+    location.hostname.endsWith(
+    ".vercel.app"
+    );
+
+    if(!user && !isVercel){
+
+        window.location.href =
+        "/register/register.html";
+
+    }
+
+});
 </script>
 
 </body>
