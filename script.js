@@ -3,7 +3,7 @@
 // Register Database
 // ====================
 
-const SUPABASE_URL =
+/* const SUPABASE_URL =
 "https://wgredziepsnlqerorxzw.supabase.co";
 
 const SUPABASE_KEY =
@@ -64,7 +64,7 @@ function registerUser(){
     );
 
     window.location.href = "/";
-}
+} */
 
 // =====================
 // MENU
