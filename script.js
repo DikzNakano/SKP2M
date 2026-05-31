@@ -1,8 +1,3 @@
-alert(localStorage.getItem("skp2m_user"));
-
-console.log("script.js loaded");
-
-console.log(window.supabase);
 
 // =====================
 // Register Database
@@ -20,7 +15,7 @@ window.supabase.createClient(
     SUPABASE_KEY
 );
 
-async function registerUser(){
+function registerUser(){
 
     const username =
     document.getElementById("username")
