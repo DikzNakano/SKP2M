@@ -1,4 +1,4 @@
-alert(localStorage.removeItem(
+alert(localStorage.getItem(
     "skp2m_user"
 );
 
