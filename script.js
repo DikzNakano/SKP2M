@@ -15,9 +15,7 @@ try {
     window.supabase.createClient(
         SUPABASE_URL,
         SUPABASE_KEY
-    );
-
-    alert("client oke");
+    ); 
 
 } catch(err){
 
@@ -29,8 +27,6 @@ try {
 }
 
 async function registerUser(){
-
-    alert("registerUser jalan");
 
     const username =
     document.getElementById("username")
