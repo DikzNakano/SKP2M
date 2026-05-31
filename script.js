@@ -157,7 +157,8 @@ function logoutUser(){
 }
 
 window.onload = loadUser;
-
+window.registerUser = registerUser;
+window.logoutUser = logoutUser;
 // =====================
 // BackBtn
 // =====================
