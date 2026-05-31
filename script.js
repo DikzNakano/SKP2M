@@ -3,71 +3,31 @@
 // Register Database
 // ====================
 
-const SUPABASE_URL =
-"https://wgredziepsnlqerorxzw.supabase.co";
-
-const SUPABASE_KEY =
-"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndncmVkemllcHNubHFlcm9yeHp3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODAyMDU5MDIsImV4cCI6MjA5NTc4MTkwMn0.w9yjTQyxtfCA0zpw8ngsr1PdiGsOYU9KDLbPjtfeVQg";
-
-let supabase;
-
-try {
-
-    supabase =
-    window.supabase.createClient(
-        SUPABASE_URL,
-        SUPABASE_KEY
-    );
-
-    alert("client oke");
-
-} catch(err){
-
-    alert(
-        "ERROR: " +
-        err.message
-    );
-
-}
-
-async function registerUser(){
+function registerUser(){
 
     const username =
-    document.getElementById("username")
-    ?.value.trim();
+    document.getElementById("username").value;
 
-    const nomor =
-    document.getElementById("phone")
-    ?.value.trim();
+    const phone =
+    document.getElementById("phone").value;
 
-    if(!username || !nomor){
-        alert("Lengkapi data terlebih dahulu");
+    if(!username || !phone){
+
+        alert("Lengkapi data dulu!");
         return;
+
     }
 
-    const { error } =
-    await supabase
-    .from("members")
-    .insert([
-        {
+    localStorage.setItem(
+        "skp2m_user",
+        JSON.stringify({
             username,
-            nomor
-        }
-    ]);
+            phone
+        })
+    );
 
-    if(error){
-
-        console.error(error);
-
-        alert(
-            "Gagal menyimpan data: " +
-            error.message
-        );
-
-        return;
-    }
-
-    alert("Berhasil disimpan!");
+    window.location.href =
+    "https://skp2m.my.id/";
 
 }
 
