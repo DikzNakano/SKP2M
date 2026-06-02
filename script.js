@@ -23,6 +23,16 @@ function registerUser(){
 
     }
 
+    if(!/^\+?[0-9]{8,20}$/.test(phone)){
+
+    alert(
+        "Masukkan nomor yang valid (8-20 digit)"
+    );
+
+    return;
+
+}
+
     localStorage.setItem(
         "skp2m_user",
         JSON.stringify({
