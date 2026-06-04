@@ -91,13 +91,13 @@ async function registerUser(){
 
     } catch(err){
 
-        console.error(err);
+    console.error(err);
 
-        alert(
-            "Server error!"
-        );
+    alert(
+        err.message
+    );
 
-    }
+  }
 
 }
 
