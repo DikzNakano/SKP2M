@@ -8,13 +8,13 @@
 // Register Database
 // ====================
 
-function registerUser(){
+async function registerUser(){
 
     const username =
-    document.getElementById("username").value;
+    document.getElementById("username").value.trim();
 
     const phone =
-    document.getElementById("phone").value;
+    document.getElementById("phone").value.trim();
 
     if(!username || !phone){
 
@@ -25,24 +25,79 @@ function registerUser(){
 
     if(!/^\+?[0-9]{8,20}$/.test(phone)){
 
-    alert(
-        "Masukkan nomor yang valid (8-20 digit)"
-    );
+        alert(
+            "Masukkan nomor yang valid (8-20 digit)"
+        );
 
-    return;
+        return;
 
-}
+    }
 
-    localStorage.setItem(
-        "skp2m_user",
-        JSON.stringify({
-            username,
-            phone
-        })
-    );
+    try {
 
-    window.location.href =
-    "https://skp2m.my.id/";
+        const res = await fetch(
+            "https://dikznakano.my.id/api/v1/register",
+            {
+                method: "POST",
+
+                headers: {
+                    "Content-Type":
+                    "application/json"
+                },
+
+                body: JSON.stringify({
+
+                    username,
+                    phone
+
+                })
+
+            }
+        );
+
+        const data =
+        await res.json();
+
+        if(!data.success){
+
+            alert(
+                data.error ||
+                "Registrasi gagal!"
+            );
+
+            return;
+
+        }
+
+        localStorage.setItem(
+
+            "skp2m_user",
+
+            JSON.stringify({
+
+                username,
+                phone
+
+            })
+
+        );
+
+        alert(
+            "Registrasi berhasil!"
+        );
+
+        window.location.href =
+        "https://skp2m.my.id/";
+
+    } catch(err){
+
+        console.error(err);
+
+        alert(
+            "Server error!"
+        );
+
+    }
 
 }
 
